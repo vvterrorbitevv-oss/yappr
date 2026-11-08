@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#14102B" />
+  <meta name="description" content="Yappr — Meet. Match. Make plans. A clickable prototype for an 18+ dating and social-planning app." />
+  <title>Yappr — Meet. Match. Make plans.</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 64 64%27%3E%3Crect width=%2764%27 height=%2764%27 rx=%2722%27 fill=%27%23C6FF3D%27/%3E%3Ctext x=%2732%27 y=%2747%27 font-size=%2742%27 font-weight=%27900%27 text-anchor=%27middle%27 font-family=%27Arial%27 fill=%27%2314102B%27%3Ey%3C/text%3E%3C/svg%3E" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="prototype-banner"><span class="pulse"></span> PROTOTYPE ONLY · DEMO PROFILES · NO REAL USERS OR MESSAGES</div>
+  <div class="app-shell">
+    <aside class="desktop-rail">
+      <div class="brand-mark"><span class="brand-symbol">y</span><span>yappr<span class="brand-period">.</span></span></div>
+      <div class="brand-tag">Meet. Match. Make plans.</div>
+      <div class="rail-label">YOUR SPACE</div>
+      <button class="rail-link active" data-view="discover"><span>✨</span> Discover</button>
+      <button class="rail-link date-nav" data-view="date-nights"><span>🗓️</span> Date nights <i class="mini-count">NEW</i></button>
+      <button class="rail-link" data-view="groups"><span>🫶</span> Groups</button>
+      <button class="rail-link" data-view="messages"><span>💬</span> Messages <i class="mini-count">2</i></button>
+      <button class="rail-link" data-view="meetups"><span>📍</span> Meetups</button>
+      <button class="rail-link" data-view="profile"><span>😎</span> My profile</button>
+      <div class="rail-bottom">
+        <div class="demo-user"><div class="avatar avatar-you">Y</div><div><strong>Your demo profile</strong><small>Preview account</small></div><span class="online-dot"></span></div>
+        <button class="rail-link subtle" data-action="open-safety"><span>🛡️</span> Safety centre</button>
+        <a class="admin-shortcut" href="admin.html">Open moderator demo ↗</a>
+      </div>
+    </aside>
+
+    <main class="main-area">
+      <header class="topbar">
+        <div class="mobile-brand"><span class="brand-symbol">y</span> yappr<span class="brand-period">.</span></div>
+        <div class="location-pill"><span class="location-dot"></span><span>Caloundra area</span><span class="muted">·</span><span class="muted">Approximate</span></div>
+        <div class="top-actions"><button class="icon-button" data-action="notifications" aria-label="Notifications">🔔<b class="notification-dot"></b></button><button class="mini-profile" data-view="profile">Y</button></div>
+      </header>
+
+      <section class="view active" id="view-discover">
+        <div class="page-heading"><div><div class="eyebrow">MEET · MATCH · MAKE PLANS</div><h1>Find your <em>people.</em></h1><p class="subheading">Less swiping. More doing. Find someone, pick a vibe, make the plan.</p></div><button class="filter-button" data-action="filters">☷ <span>Filters</span></button></div>
+        <div class="discover-layout">
+          <div class="discovery-column">
+            <div class="mode-switch"><button class="mode active" data-mode="dating">💘 Dating</button><button class="mode" data-mode="friends">🤝 Friends</button><button class="mode" data-mode="both">✨ Both</button></div>
+            <div class="profile-card" id="profile-card">
+              <div class="profile-art art-maya"><div class="art-orbit orbit-one"></div><div class="art-orbit orbit-two"></div><div class="art-shape shape-one"></div><div class="art-shape shape-two"></div><div class="art-caption">DEMO PROFILE</div><div class="art-monogram">M.</div><div class="art-location">⌖  Caloundra area</div></div>
+              <div class="profile-card-body"><div class="profile-title-row"><div><h2 id="card-name">Maya, 22 <span class="verified-mark">✓</span></h2><p id="card-subtitle">Creative soul · Coffee enthusiast</p></div><div class="compatibility"><strong id="card-compat">92%</strong><span>COMPATIBLE</span></div></div><div class="tag-row" id="card-tags"><span>Live music</span><span>Beach walks</span><span>Photography</span></div><p class="profile-prompt" id="card-prompt">“A perfect Sunday is a slow coffee, a coastal drive and finding a new little place.”</p></div>
+              <div class="card-actions"><button class="round-action pass-action" data-action="pass" aria-label="Pass">×</button><button class="round-action save-action" data-action="save" aria-label="Save profile">☆</button><button class="round-action like-action" data-action="like" aria-label="Like profile">♥</button></div>
+              <div class="card-footnote">Fictional profile · Demo interactions only</div>
+            </div>
+            <div class="keyboard-hint">PASS <kbd>←</kbd><span>LIKE <kbd>→</kbd></span></div>
+          </div>
+          <aside class="discovery-side">
+            <div class="side-card intent-card"><div class="side-card-top"><span class="small-icon pink">✳</span><span class="eyebrow">A BETTER KIND OF MATCH</span></div><h3>Vibes over vanity.</h3><p>Compatibility looks at shared interests, lifestyle and what you're both looking for — not popularity.</p><div class="compat-legend"><span><i class="legend-dot purple-dot"></i> Shared interests</span><span><i class="legend-dot orange-dot"></i> Lifestyle fit</span><span><i class="legend-dot green-dot"></i> Intentions</span></div></div>
+            <div class="side-card nearby-card"><div class="nearby-head"><div><div class="eyebrow">OUT IN THE WORLD</div><h3>Nearby discovery</h3></div><span class="lock-icon">⌖</span></div><p>Only visible when you switch it on. Your exact location is never shown.</p><div class="toggle-row"><span id="nearby-status">You're invisible</span><button class="toggle" id="nearby-toggle" aria-pressed="false"><span></span></button></div><button class="text-button" data-action="nearby-settings">Manage visibility settings ↗</button></div>
+            <div class="side-card small-side"><div class="eyebrow">MADE FOR REAL LIFE</div><div class="stats-row"><div><strong>01</strong><span>Meet with intention</span></div><div><strong>02</strong><span>Confirm together</span></div><div><strong>03</strong><span>Keep it respectful</span></div></div></div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="view" id="view-date-nights">
+        <div class="page-heading date-page-heading"><div><div class="eyebrow">MAKE THIS WEEK HAPPEN</div><h1>Your week, <em>your people.</em></h1><p class="subheading">Pick your free nights. Find people on the same wavelength. Make an actual plan.</p></div><span class="date-week-pill">✦ THIS WEEK · DEMO</span></div>
+        <div class="date-hero">
+          <div class="date-hero-copy"><div class="eyebrow">LESS “WE SHOULD HANG OUT”</div><h2>More plans that <em>actually happen.</em></h2><p>Share when you're available, discover compatible people with matching time, then agree on the date together.</p><button class="date-hero-button" data-action="build-date-plan">＋ Build a date plan</button></div>
+          <div class="date-hero-art"><div class="date-orbit orbit-a"></div><div class="date-orbit orbit-b"></div><div class="date-art-sun">✦</div><div class="date-art-caption">GOOD PLANS<br/>START HERE</div><div class="date-art-sticker">IRL > MAYBE</div></div>
+        </div>
+        <div class="date-layout">
+          <div class="date-main-column">
+            <section class="date-panel availability-panel">
+              <div class="date-panel-heading"><div><div class="eyebrow">YOUR AVAILABILITY</div><h2>When are you free?</h2><p>Choose the windows you'd genuinely be happy to meet.</p></div><span class="date-step">01 / 03</span></div>
+              <div class="availability-grid">
+                <div class="availability-day"><div class="day-top"><strong>THU</strong><small>13</small></div><button class="availability-slot" data-slot="Thursday · Evening">Evening <span>＋</span></button></div>
+                <div class="availability-day"><div class="day-top"><strong>FRI</strong><small>14</small></div><button class="availability-slot selected" data-slot="Friday · Evening">Evening <span>✓</span></button></div>
+                <div class="availability-day"><div class="day-top"><strong>SAT</strong><small>15</small></div><button class="availability-slot selected" data-slot="Saturday · Afternoon">Afternoon <span>✓</span></button><button class="availability-slot selected" data-slot="Saturday · Evening">Evening <span>✓</span></button></div>
+                <div class="availability-day"><div class="day-top"><strong>SUN</strong><small>16</small></div><button class="availability-slot" data-slot="Sunday · Daytime">Daytime <span>＋</span></button></div>
+              </div>
+              <div class="availability-footer"><span id="availability-summary">3 available windows selected</span><button class="text-button" data-action="save-availability">Save availability ↗</button></div>
+            </section>
+            <section class="date-panel match-time-panel">
+              <div class="date-panel-heading"><div><div class="eyebrow">YOUR SCHEDULE OVERLAP</div><h2>Free when you are</h2><p>Demo profiles with compatible interests and overlapping availability.</p></div><span class="date-step">02 / 03</span></div>
+              <div class="date-match-list">
+                <article class="date-match-card"><div class="date-match-avatar avatar-maya">M</div><div class="date-match-main"><div class="date-match-name"><strong>Maya, 22 <span class="verified-mark">✓</span></strong><span class="date-match-compat">92% match</span></div><p>Coffee spots · Live music · Beach walks</p><div class="overlap-tags"><span>↗ Friday evening</span><span>Saturday afternoon</span></div></div><button class="date-suggest-button" data-action="propose-date" data-name="Maya" data-compat="92%">Make a plan</button></article>
+                <article class="date-match-card"><div class="date-match-avatar avatar-leo">L</div><div class="date-match-main"><div class="date-match-name"><strong>Leo, 24 <span class="verified-mark">✓</span></strong><span class="date-match-compat">88% match</span></div><p>Food spots · Outdoors · Road trips</p><div class="overlap-tags"><span>↗ Friday evening</span></div></div><button class="date-suggest-button" data-action="propose-date" data-name="Leo" data-compat="88%">Make a plan</button></article>
+                <article class="date-match-card"><div class="date-match-avatar avatar-sienna">S</div><div class="date-match-main"><div class="date-match-name"><strong>Sienna, 21 <span class="verified-mark">✓</span></strong><span class="date-match-compat">86% match</span></div><p>Indie music · Art · Markets</p><div class="overlap-tags"><span>↗ Saturday evening</span></div></div><button class="date-suggest-button" data-action="propose-date" data-name="Sienna" data-compat="86%">Make a plan</button></article>
+              </div>
+              <div class="date-demo-note">Fictional profiles and sample availability · No real invitations are sent.</div>
+            </section>
+          </div>
+          <aside class="date-side-column">
+            <section class="date-panel date-plan-panel"><div class="date-panel-heading"><div><div class="eyebrow">YOUR NEXT PLAN</div><h2>On the calendar</h2></div><span class="date-step">03 / 03</span></div><div id="date-plan-preview" class="date-plan-empty"><div class="date-empty-icon">＋</div><strong>Nothing planned yet</strong><p>Pick someone with matching availability and suggest something you would both enjoy.</p><button class="date-outline-button" data-action="build-date-plan">Create a plan</button></div></section>
+            <section class="date-panel activity-panel"><div class="eyebrow">PICK THE VIBE</div><h2>What sounds good?</h2><p>Choose a starting point. You can always decide together.</p><div class="date-idea-grid"><button class="date-idea selected" data-idea="Coffee + a coastal walk"><span>☕</span><strong>Coffee + a walk</strong><small>Easy-going</small></button><button class="date-idea" data-idea="Dinner somewhere new"><span>🍝</span><strong>Dinner</strong><small>Classic date</small></button><button class="date-idea" data-idea="Mini golf"><span>⛳</span><strong>Mini golf</strong><small>Playful</small></button><button class="date-idea" data-idea="Live music"><span>♫</span><strong>Live music</strong><small>Good energy</small></button></div><div class="date-locality"><span>⌖</span><div><strong>Caloundra area</strong><small>Approximate area only · Demo location</small></div></div></section>
+          </aside>
+        </div>
+      </section>
+
+      <section class="view" id="view-groups">
+        <div class="page-heading"><div><div class="eyebrow">GROUP PLANS</div><h1>Find your <em>crew.</em></h1><p class="subheading">Hang with people around shared interests, not just profiles.</p></div><button class="primary-button" data-action="create-group">＋ Create group</button></div>
+        <div class="category-pills"><button class="chip active">For you</button><button class="chip">This weekend</button><button class="chip">Music</button><button class="chip">Outdoors</button><button class="chip">Food & coffee</button></div>
+        <div class="group-grid" id="group-grid">
+          <article class="group-card"><div class="group-art group-art-orange"><span>☀</span><small>WEEKEND PLANS</small></div><div class="group-card-body"><div class="group-meta"><span>CALOUNDRA AREA</span><span>12 people</span></div><h3>Bored people club</h3><p>No plans? Same. Easy-going weekend hangs, beach walks and last-minute adventures.</p><div class="group-card-bottom"><span class="host-line"><span class="tiny-avatar">J</span> Hosted by Jordan</span><button class="join-button" data-action="join-group">Join group</button></div></div></article>
+          <article class="group-card"><div class="group-art group-art-lilac"><span>♫</span><small>MUSIC PEOPLE</small></div><div class="group-card-body"><div class="group-meta"><span>SUNSHINE COAST</span><span>8 people</span></div><h3>Gig buddies</h3><p>Find people for local gigs, live music and discovering new artists.</p><div class="group-card-bottom"><span class="host-line"><span class="tiny-avatar lilac-avatar">A</span> Hosted by Alex</span><button class="join-button" data-action="join-group">Join group</button></div></div></article>
+          <article class="group-card"><div class="group-art group-art-green"><span>☕</span><small>LOW KEY SOCIAL</small></div><div class="group-card-body"><div class="group-meta"><span>CALOUNDRA AREA</span><span>6 people</span></div><h3>Coffee & conversations</h3><p>Small groups, good coffee and meeting new people without the pressure.</p><div class="group-card-bottom"><span class="host-line"><span class="tiny-avatar green-avatar">S</span> Hosted by Sam</span><button class="join-button" data-action="join-group">Join group</button></div></div></article>
+        </div>
+      </section>
+
+      <section class="view" id="view-messages">
+        <div class="page-heading"><div><div class="eyebrow">KEEP THE CONVERSATION GOING</div><h1>Your <em>inbox.</em></h1><p class="subheading">A demo of how conversations could feel.</p></div></div>
+        <div class="inbox-layout"><div class="conversation-list"><div class="inbox-search">⌕ <span>Search conversations</span></div><button class="conversation active" data-chat="maya"><span class="chat-avatar maya-avatar">M</span><span class="conversation-copy"><strong>Maya <i class="online-dot"></i></strong><small>That little coffee spot sounds perfect</small></span><time>2m</time></button><button class="conversation" data-chat="leo"><span class="chat-avatar leo-avatar">L</span><span class="conversation-copy"><strong>Leo</strong><small>Are you going to the markets?</small></span><time>1h</time></button><div class="inbox-note">These are fictional conversations. No message is sent to a real person.</div></div><div class="chat-panel"><div class="chat-header"><span class="chat-avatar maya-avatar">M</span><div><strong id="chat-name">Maya</strong><small><i class="online-dot"></i> Demo conversation</small></div><button class="more-button" data-action="chat-options">···</button></div><div class="chat-safety-note">♡ <span>Keep it kind. Never share your address or financial details.</span></div><div class="chat-messages" id="chat-messages"><div class="date-divider">TODAY</div><div class="message received">Hey! I saw you're into live music too 🎶</div><div class="message sent">Always looking for new artists. What have you been listening to?</div><div class="message received">A bit of everything lately. That little coffee spot you mentioned sounds perfect!</div></div><div class="chat-compose"><button class="compose-plus" data-action="chat-options">＋</button><input id="message-input" placeholder="Write a message…" maxlength="240"/><button class="send-button" data-action="send-message">↑</button></div><div class="social-consent"><span>Social sharing</span><button class="text-button" data-action="social-share">Request mutual share ↗</button></div></div></div>
+      </section>
+
+      <section class="view" id="view-meetups">
+        <div class="page-heading"><div><div class="eyebrow">ONLINE IS JUST THE START</div><h1>Make it <em>real.</em></h1><p class="subheading">Plan together, confirm together, keep your own boundaries.</p></div><button class="primary-button" data-action="plan-meetup">＋ Plan meetup</button></div>
+        <div class="meetup-feature"><div class="meetup-illustration"><div class="meetup-orbit"></div><span>⌁</span><small>REAL LIFE, VERIFIED</small></div><div class="meetup-feature-copy"><div class="eyebrow">HOW IT WORKS</div><h2>A simple check-in.<br/><em>A little more peace of mind.</em></h2><p>Both people independently confirm when they meet. No one can check in for the other person. You decide what details to share.</p><button class="secondary-button" data-action="start-demo-meetup">Try demo confirmation ↗</button></div></div>
+        <div class="section-heading"><div><div class="eyebrow">YOUR PLANS</div><h2>Upcoming meetups</h2></div></div>
+        <div class="empty-state"><div class="empty-icon">⌁</div><h3>No meetups planned yet</h3><p>When you plan something with a match or group, it'll appear here.</p><button class="text-button" data-action="plan-meetup">Plan a meetup ↗</button></div>
+        <div class="safety-strip"><span>♡</span><div><strong>Meet safely, your way.</strong><p>Choose public places, tell someone you trust and use in-app safety tools if you need them.</p></div><button class="text-button" data-action="open-safety">Safety tips ↗</button></div>
+      </section>
+
+      <section class="view" id="view-profile">
+        <div class="page-heading"><div><div class="eyebrow">YOUR SPACE, YOUR RULES</div><h1>Your <em>profile.</em></h1><p class="subheading">Choose what people get to know about you.</p></div><button class="secondary-button" data-action="edit-profile">Edit profile</button></div>
+        <div class="profile-layout"><div class="my-profile-card"><div class="my-profile-art"><div class="my-avatar">Y</div><span class="verification-pill">✓ Demo verified</span></div><div class="my-profile-info"><div class="profile-title-row"><div><h2>You, 18+</h2><p>Caloundra area · Approximate</p></div><span class="profile-complete">PROFILE PREVIEW</span></div><p class="profile-prompt">“Here to meet good people, find new places and say yes to more plans.”</p><div class="tag-row"><span>Live music</span><span>Beach days</span><span>Food spots</span><span>Good chats</span></div></div></div><div class="settings-card"><div class="eyebrow">PRIVACY & VISIBILITY</div><div class="setting-line"><div><strong>Nearby discovery</strong><small>Let opted-in people in your area discover you.</small></div><button class="toggle" id="profile-nearby-toggle" aria-pressed="false"><span></span></button></div><div class="setting-line"><div><strong>Show social history</strong><small>Show anonymous meetup totals on your profile.</small></div><button class="toggle on" aria-pressed="true" data-action="toggle-history"><span></span></button></div><div class="setting-line"><div><strong>Friend discovery</strong><small>Allow compatible people looking for friends to find you.</small></div><button class="toggle on" aria-pressed="true" data-action="toggle-friends"><span></span></button></div><div class="setting-line"><div><strong>Pause discovery</strong><small>Hide your profile from new discovery.</small></div><button class="toggle" aria-pressed="false" data-action="toggle-pause"><span></span></button></div><button class="full-row-button" data-action="open-safety">♡  Safety centre and blocked users <span>↗</span></button><button class="full-row-button" data-action="account-settings">⚙  Account and subscription settings <span>↗</span></button></div></div>
+      </section>
+
+      <footer class="prototype-footer">YAPPR · MEET. MATCH. MAKE PLANS. · NON-PRODUCTION PROTOTYPE · NEVER USE REAL PERSONAL INFORMATION HERE</footer>
+    </main>
+
+    <nav class="mobile-nav"><button class="active" data-view="discover"><span>✨</span>Discover</button><button data-view="date-nights"><span>🗓️</span>Dates</button><button data-view="groups"><span>🫶</span>Groups</button><button data-view="messages"><span>💬</span>Inbox</button><button data-view="meetups"><span>📍</span>Meetups</button><button data-view="profile"><span>😎</span>Profile</button></nav>
+  </div>
+
+  <div class="modal-backdrop" id="modal-backdrop" aria-hidden="true"><div class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title"><button class="modal-close" data-action="close-modal" aria-label="Close">×</button><div id="modal-content"></div></div></div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="app.js"></script>
+</body>
+</html>
